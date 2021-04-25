@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/router"
 import { useRef } from "react"
 
-import Avatar from "../components/Avatar"
+import Avatar from "./Avatar"
+import HeaderOptions from "./HeaderOptions"
 
 
 
@@ -43,6 +44,8 @@ function Header() {
                 </form>
                 <Avatar className="ml-auto" url={"https://www.google.com/imgres?imgurl=https%3A%2F%2Fbloximages.newyork1.vip.townnews.com%2Fkmov.com%2Fcontent%2Ftncms%2Fassets%2Fv3%2Feditorial%2F0%2Fd1%2F0d1a16ac-98e5-11eb-b533-2fe2e5930157%2F606fcc65335dd.image.png%3Fcrop%3D360%252C360%252C140%252C0%26resize%3D1200%252C1200%26order%3Dcrop%252Cresize&imgrefurl=https%3A%2F%2Fwww.kmov.com%2Fnews%2Fwash-u-to-hold-in-person-graduation-nba-hall-of-famer-will-give-commencement-speech%2Farticle_753e36ec-98e4-11eb-9c40-03f8261719eb.html&tbnid=N39VV0Xk9HfSuM&vet=10CAkQxiAoAWoXChMI8OjT846a8AIVAAAAAB0AAAAAEAc..i&docid=xe5bdiy40TdiFM&w=1200&h=1200&itg=1&q=person&ved=0CAkQxiAoAWoXChMI8OjT846a8AIVAAAAAB0AAAAAEAc"} />
             </div>
+            {/* HeaderOptions */}
+            <HeaderOptions />
         </header>
     )
 }
