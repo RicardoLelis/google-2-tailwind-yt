@@ -7,8 +7,6 @@ import { useRef } from "react"
 import Avatar from "./Avatar"
 import HeaderOptions from "./HeaderOptions"
 
-
-
 function Header() {
     const router = useRouter()
     const searchInputRef = useRef(null)
@@ -33,7 +31,7 @@ function Header() {
                     className="cursor-pointer"
                 />
                 <form className="flex flex-grow px-6 py-3 ml-10 border boder-gray-200 rounded-full flex-grow shadow-lg max-w-3xl items-center">
-                    <input ref={searchInputRef} className="flex-grow w-full focus:outline-none " type="text" />
+                    <input ref={searchInputRef} className="flex-grow w-full focus:outline-none " type="text" defaultValue={router.query.term} />
                     <XIcon
                         className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
                         onClick={() => (searchInputRef.current.value = "")}
